@@ -1,13 +1,16 @@
 body {
     background: #F15A24;
-    height: 1500px;
 }
 .logo {
     position: relative;
     width: 425px;
     height: 550px;
     margin: auto;
-    top: 200px;
+    top: 130px;
+}
+
+.logo:hover {
+    animation-play-state: paused; !important
 }
 .one {
     left: 0;
@@ -58,4 +61,92 @@ body {
     height:152px;
     animation: pulse 2s infinite alternate;
 
+}
+
+h1 {
+    font-family: sofia-pro, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    top: 70px;
+    position: relative;
+    letter-spacing: 3px;
+
+}
+h2 {
+    font-family: sofia-pro, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    top: 35px;
+    position: relative;
+    /*letter-spacing: 3px;*/
+
+}
+ul
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+li {
+    font-family: sofia-pro, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    color: white;
+    top: 35px;
+    position: relative;
+    text-align: left;
+
+}
+#wheel {
+
+    width: 250px;
+    height:33px;
+    overflow: hidden;
+    display: inline-block;
+    margin-top: 46px;
+}
+.flip {
+    animation: slide-in  8s forwards;
+}
+
+@keyframes slide-in {
+    from {margin-top: -340%}
+    to {margin-top:-18%}
+}
+#box {
+    width: 700px;
+    display: block;
+    margin: auto;
+    left: 60%;
+}
+.fa-chevron-right {
+    color: white;
+    transform: scale(2, 2);
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    margin-left: 200px;
+    margin-top: -30px;
+    visibility: hidden;
+    opacity: 0;
+    animation: reveal 2s forwards, pulse2 1s infinite alternate;
+    animation-delay: 8s;
+
+}
+@keyframes reveal {
+    from {visibility: hidden}
+    to {visibility: visible}
+    from {opacity: 0}
+    to {opacity:1}
+}
+@keyframes pulse2 {
+    0% {transform:scale(2,2);}
+    100% {transform:scale(2.3,2.3);}
 }

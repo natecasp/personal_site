@@ -1,0 +1,75 @@
+.logo {
+  position: relative;
+  width: 425px;
+  height: 550px;
+  margin: auto;
+  top: 200px;
+}
+
+html:not([data-scroll='0']) {
+
+  body {
+    padding-top: 3em;
+  }
+
+  .logo {
+  transform: translate(.2,.2);
+  }
+
+}
+
+.one {
+  left: 0;
+  top: 0;
+  position: absolute;
+  animation: pulse 2s infinite alternate;
+  animation-delay: .5s;
+
+}
+@keyframes pulse {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+.two {
+  left: 216px;
+  top: 10px;
+  position: absolute;
+  animation: pulse 2s infinite alternate;
+  animation-delay: 1.5s;
+}
+
+
+.three {
+  left: -1px;
+  top: -32px;
+  position: absolute;
+  animation: pulse 2s infinite alternate;
+  animation-delay: 1s;
+
+}
+.four {
+  left: 290px;
+  top: 296px;
+  position: absolute;
+  animation: pulse 2s infinite alternate;
+  animation-delay: 2s;
+
+}
+.five {
+  left: 64px;
+  top: 262px;
+  position: absolute;
+  width: 45px;
+  height:152px;
+  animation: pulse 2s infinite alternate;
+
+}
+
+body {
+  background: #F15A24;
+  height: 1500px;
+}
